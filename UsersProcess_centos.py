@@ -1,3 +1,5 @@
+
+#Method 1:
 """ Count the number of processes being run by each user on CentOS """
 import subprocess
 users = {}
@@ -13,7 +15,7 @@ for line in ps_cmd.splitlines()[1:]:
 			print "%s is running %s processes" % (user, process_count)
 print users
 
-Method 2:
+#Method 2:
 
 import subprocess
 users = {}
